@@ -1,8 +1,18 @@
 {
   "type": "module",
   "dependencies": {
+    "@langchain/community": "^0.3.32",
+    "@langchain/core": "^0.3.40",
+    "@langchain/mistralai": "^0.2.0",
+    "@langchain/openai": "^0.4.4",
+    "@langchain/textsplitters": "^0.1.0",
+    "@mendable/firecrawl-js": "^1.18.2",
+    "cheerio": "^1.0.0",
     "dotenv": "^16.4.7",
-    "exa-js": "^1.4.10"
+    "exa-js": "^1.4.10",
+    "langchain": "^0.3.19",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.3"
   },
   "devDependencies": {
     "@types/node": "^22.13.5"
