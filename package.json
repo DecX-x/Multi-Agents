@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "exa-js": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5"
+  }
+}
