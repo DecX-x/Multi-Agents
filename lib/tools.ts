@@ -13,7 +13,7 @@ export async function searchContent(query: string) {
             text: true,
             type: "neural",
             useAutoprompt: true,
-            numResults: 10
+            numResults: 5
         });
         
         return result;
