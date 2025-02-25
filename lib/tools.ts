@@ -66,6 +66,23 @@ export const scrapeTool = new DynamicStructuredTool({
     }
 })
 
-
-const results = await searchContent("Blog about ai agents");
-console.log(results);
+export async function crawlWebsite(url: string): Promise<void> {
+    try {
+        const result = await scrapeMendableDocs(url);
+        console.log('Crawling results for:', url);
+        console.log(result);
+    } catch (err) {
+        console.error(`Failed to crawl ${url}:`, err);
+    }
+}
+export const crawlTool = new DynamicStructuredTool({
+    name: "crawlWebsite",
+    description: "Crawl a website for content",
+    schema: z.object({
+        url: z.string().describe("URL of the website to crawl")
+    }),
+    async func(inputs) {
+        const result = await crawlWebsite(inputs.url);
+        return { result };
+    }
+})

@@ -32,5 +32,5 @@ async function crawlWebsite(url: string): Promise<void> {
 }
 
 // Example usage:
-const results = await crawlWebsite('https://python.langchain.com/docs/introduction/');
+const results = await crawlWebsite('https://python.langchain.com/docs/introduction/ ');
 console.log(results);
